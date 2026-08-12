@@ -1,0 +1,67 @@
+{
+  "name": "lichess-tv",
+  "author": "CATEIN",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Lichess TV",
+    "uuid": "af0189c1-b3b6-4e26-9603-220a541a3445",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "capabilities": [
+      "configurable"
+    ],
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "BoardFEN",
+      "StatusText",
+      "SelectedChannel",
+      "BoardTheme",
+      "BoardSize",
+      "WhiteTitle",
+      "WhiteName",
+      "WhiteRating",
+      "WhiteClockSecs",
+      "WhitePatron",
+      "BlackTitle",
+      "BlackName",
+      "BlackRating",
+      "BlackClockSecs",
+      "BlackPatron",
+      "ActiveColor",
+      "LastMove",
+      "BoardHighlight",
+      "WristFlickEnabled",
+      "CheckStream",
+      "StreamAlive",
+      "CheckSquare",
+      "WhiteFlagged",
+      "BlackFlagged",
+      "InactivityTimeoutMin"
+    ],
+    "resources": {
+      "media": [
+      { "type": "bitmap", "name": "IMAGE_PIECE_WK", "file": "images/pieces/wK.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_WQ", "file": "images/pieces/wQ.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_WR", "file": "images/pieces/wR.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_WB", "file": "images/pieces/wB.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_WN", "file": "images/pieces/wN.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_WP", "file": "images/pieces/wP.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BK", "file": "images/pieces/bK.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BQ", "file": "images/pieces/bQ.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BR", "file": "images/pieces/bR.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BB", "file": "images/pieces/bB.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BN", "file": "images/pieces/bN.png" },
+      { "type": "bitmap", "name": "IMAGE_PIECE_BP", "file": "images/pieces/bP.png" },
+      { "type": "bitmap", "name": "IMAGE_PATRON_WING", "file": "images/patron-wing.png" }
+    ]
+    }
+  }
+}
