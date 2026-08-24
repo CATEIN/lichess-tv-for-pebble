@@ -1,8 +1,10 @@
 {
   "name": "lichess-tv",
   "author": "CATEIN",
-  "version": "1.0.0",
-  "keywords": ["pebble-app"],
+  "version": "1.1.0",
+  "keywords": [
+    "pebble-app"
+  ],
   "private": true,
   "dependencies": {},
   "pebble": {
@@ -44,24 +46,166 @@
       "CheckSquare",
       "WhiteFlagged",
       "BlackFlagged",
-      "InactivityTimeoutMin"
+      "InactivityTimeoutMin",
+      "LastMoveSAN",
+      "EnterBroadcastMode",
+      "BroadcastIndex",
+      "BroadcastId",
+      "BroadcastName",
+      "BroadcastListDone",
+      "BroadcastCount",
+      "SelectedBroadcast",
+      "GameIndex",
+      "GameWhite",
+      "GameBlack",
+      "GameListDone",
+      "SelectedGame",
+      "WhiteScore",
+      "BlackScore",
+      "BroadcastActive",
+      "ShowTournamentPlayers",
+      "EnterStreamerMode",
+      "StreamerIndex",
+      "StreamerName",
+      "StreamerListDone",
+      "StreamerCount",
+      "SelectedStreamer",
+      "StreamerActive"
     ],
     "resources": {
       "media": [
-      { "type": "bitmap", "name": "IMAGE_PIECE_WK", "file": "images/pieces/wK.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_WQ", "file": "images/pieces/wQ.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_WR", "file": "images/pieces/wR.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_WB", "file": "images/pieces/wB.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_WN", "file": "images/pieces/wN.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_WP", "file": "images/pieces/wP.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BK", "file": "images/pieces/bK.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BQ", "file": "images/pieces/bQ.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BR", "file": "images/pieces/bR.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BB", "file": "images/pieces/bB.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BN", "file": "images/pieces/bN.png" },
-      { "type": "bitmap", "name": "IMAGE_PIECE_BP", "file": "images/pieces/bP.png" },
-      { "type": "bitmap", "name": "IMAGE_PATRON_WING", "file": "images/patron-wing.png" }
-    ]
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WK_BIG",
+          "file": "images/pieces/big/wK.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WQ_BIG",
+          "file": "images/pieces/big/wQ.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WR_BIG",
+          "file": "images/pieces/big/wR.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WB_BIG",
+          "file": "images/pieces/big/wB.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WN_BIG",
+          "file": "images/pieces/big/wN.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WP_BIG",
+          "file": "images/pieces/big/wP.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BK_BIG",
+          "file": "images/pieces/big/bK.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BQ_BIG",
+          "file": "images/pieces/big/bQ.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BR_BIG",
+          "file": "images/pieces/big/bR.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BB_BIG",
+          "file": "images/pieces/big/bB.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BN_BIG",
+          "file": "images/pieces/big/bN.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BP_BIG",
+          "file": "images/pieces/big/bP.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WK_BIGGEST",
+          "file": "images/pieces/biggest/wK.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WQ_BIGGEST",
+          "file": "images/pieces/biggest/wQ.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WR_BIGGEST",
+          "file": "images/pieces/biggest/wR.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WB_BIGGEST",
+          "file": "images/pieces/biggest/wB.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WN_BIGGEST",
+          "file": "images/pieces/biggest/wN.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_WP_BIGGEST",
+          "file": "images/pieces/biggest/wP.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BK_BIGGEST",
+          "file": "images/pieces/biggest/bK.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BQ_BIGGEST",
+          "file": "images/pieces/biggest/bQ.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BR_BIGGEST",
+          "file": "images/pieces/biggest/bR.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BB_BIGGEST",
+          "file": "images/pieces/biggest/bB.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BN_BIGGEST",
+          "file": "images/pieces/biggest/bN.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PIECE_BP_BIGGEST",
+          "file": "images/pieces/biggest/bP.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PATRON_WING",
+          "file": "images/patron-wing.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_ICON",
+          "file": "images/logo.png",
+          "menuIcon": true
+        }
+      ]
     }
   }
 }
